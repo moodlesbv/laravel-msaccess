@@ -29,6 +29,13 @@
             "ZoiloMora\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZoiloMora\\AccessServiceProvider"
+            ]
+        }
+    },
     "support": {
         "issues": "https://github.com/zoilomora/laravel-msaccess/issues"
     }
