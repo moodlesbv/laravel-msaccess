@@ -19,10 +19,10 @@
     ],
     "require": {
         "doctrine/dbal": "^2.6",
-        "illuminate/database": "^5.4"
+        "illuminate/database": ">=5.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~8.4"
     },
     "autoload": {
         "psr-4": {
