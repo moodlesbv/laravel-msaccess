@@ -1,7 +1,7 @@
 {
-    "name": "zoilomora/laravel-msaccess",
+    "name": "MoodlesBV/laravel-msaccess",
     "description": "This package helps you to manage Microsoft Access DB by ODBC Connection with the integrated Laravel ORM.",
-    "version": "1.0.0-beta",
+    "version": "1.0.0",
     "type": "library",
     "keywords": [
         "laravel",
@@ -19,24 +19,24 @@
     ],
     "require": {
         "doctrine/dbal": "^2.6",
-        "illuminate/database": ">=5.4"
+        "illuminate/database": ">=6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.4"
     },
     "autoload": {
         "psr-4": {
-            "ZoiloMora\\": "src/"
+            "MoodlesBV\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ZoiloMora\\AccessServiceProvider"
+                "MoodlesBV\\AccessServiceProvider"
             ]
         }
     },
     "support": {
-        "issues": "https://github.com/zoilomora/laravel-msaccess/issues"
+        "issues": "https://github.com/MoodlesBV/laravel-msaccess/issues"
     }
 }
