@@ -1,11 +1,11 @@
 <?php
 
-namespace ZoiloMora;
+namespace Moodlesbv;
 
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
-use ZoiloMora\Illuminate\Database\AccessConnection;
+use Moodlesbv\Illuminate\Database\AccessConnection;
 
 class AccessServiceProvider extends ServiceProvider
 {

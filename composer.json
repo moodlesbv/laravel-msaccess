@@ -33,13 +33,13 @@
     },
     "autoload": {
         "psr-4": {
-            "moodlesbv\\": "src/"
+            "Moodlesbv\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "moodlesbv\\AccessServiceProvider"
+                "Moodlesbv\\AccessServiceProvider"
             ]
         }
     },
