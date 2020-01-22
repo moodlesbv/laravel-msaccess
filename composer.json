@@ -1,7 +1,6 @@
 {
     "name": "moodlesbv/laravel-msaccess",
     "description": "This package helps you to manage Microsoft Access DB by ODBC Connection with the integrated Laravel ORM.",
-    "version": "1.0.0",
     "type": "library",
     "keywords": [
         "laravel",
@@ -27,7 +26,7 @@
     ],
     "require": {
         "doctrine/dbal": "^2.6",
-        "illuminate/database": ">=6.0"
+        "illuminate/database": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.4"
