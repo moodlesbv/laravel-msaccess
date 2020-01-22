@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoiloMora\Illuminate\Database\Query\Processors;
+namespace Moodlesbv\Illuminate\Database\Query\Processors;
 
 use Illuminate\Database\Query\Processors\SqlServerProcessor as BaseProcessor;
 

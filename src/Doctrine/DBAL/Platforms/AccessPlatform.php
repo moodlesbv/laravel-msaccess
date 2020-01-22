@@ -1,8 +1,8 @@
 <?php
 
-namespace ZoiloMora\Doctrine\DBAL\Platforms;
+namespace Moodlesbv\Doctrine\DBAL\Platforms;
 
-use ZoiloMora\Doctrine\DBAL\Platforms\Keywords\AccessKeywords;
+use Moodlesbv\Doctrine\DBAL\Platforms\Keywords\AccessKeywords;
 use Doctrine\DBAL\Platforms\SQLServerPlatform;
 
 class AccessPlatform extends SQLServerPlatform

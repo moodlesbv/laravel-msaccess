@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoiloMora\Doctrine\DBAL\Platforms\Keywords;
+namespace Moodlesbv\Doctrine\DBAL\Platforms\Keywords;
 
 use Doctrine\DBAL\Platforms\Keywords\SQLServerKeywords;
 

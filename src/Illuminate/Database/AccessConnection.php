@@ -1,9 +1,9 @@
 <?php
 
-namespace ZoiloMora\Illuminate\Database;
+namespace Moodlesbv\Illuminate\Database;
 
 use Illuminate\Database\Connection as BaseConnection;
-use ZoiloMora\Doctrine\DBAL\Driver\Access\Driver as DoctrineDriver;
+use Moodlesbv\Doctrine\DBAL\Driver\Access\Driver as DoctrineDriver;
 
 class AccessConnection extends BaseConnection
 {
@@ -15,12 +15,12 @@ class AccessConnection extends BaseConnection
     {
         $dsn = $this->getDsn($config);
 
-        $pdo = new \ZoiloMora\Doctrine\DBAL\Driver\Access\AccessConnection($dsn);
+        $pdo = new \Moodlesbv\Doctrine\DBAL\Driver\Access\AccessConnection($dsn);
 
         parent::__construct($pdo, '', '', $config);
         $this->createConnection($pdo);
 
-        if(array_key_exists('table_prefix', $config)) {
+        if (array_key_exists('table_prefix', $config)) {
             $this->setTablePrefix($config['table_prefix']);
         }
     }
@@ -35,7 +35,7 @@ class AccessConnection extends BaseConnection
     {
         $dsn = trim('odbc:'.$config['connection_string']);
 
-        if(substr($dsn, -1) !== ';') {
+        if (substr($dsn, -1) !== ';') {
             $dsn .= ';';
         }
 
@@ -47,7 +47,7 @@ class AccessConnection extends BaseConnection
      */
     protected function getDefaultQueryGrammar()
     {
-        return new \ZoiloMora\Illuminate\Database\Query\Grammars\AccessGrammar();
+        return new \Moodlesbv\Illuminate\Database\Query\Grammars\AccessGrammar();
     }
 
     /**
@@ -55,7 +55,7 @@ class AccessConnection extends BaseConnection
      */
     protected function getDefaultPostProcessor()
     {
-        return new \ZoiloMora\Illuminate\Database\Query\Processors\AccessProcessor();
+        return new \Moodlesbv\Illuminate\Database\Query\Processors\AccessProcessor();
     }
 
     /**
@@ -63,7 +63,7 @@ class AccessConnection extends BaseConnection
      */
     protected function getDefaultSchemaGrammar()
     {
-        return new \ZoiloMora\Illuminate\Database\Schema\Grammars\AccessGrammar();
+        return new \Moodlesbv\Illuminate\Database\Schema\Grammars\AccessGrammar();
     }
 
     /**
@@ -93,7 +93,7 @@ class AccessConnection extends BaseConnection
     /**
      * Get the Doctrine DBAL driver.
      *
-     * @return \ZoiloMora\Doctrine\DBAL\Driver\Access\Driver
+     * @return \Moodlesbv\Doctrine\DBAL\Driver\Access\Driver
      */
     protected function getDoctrineDriver()
     {

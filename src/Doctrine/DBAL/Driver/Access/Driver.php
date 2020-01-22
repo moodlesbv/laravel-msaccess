@@ -1,9 +1,9 @@
 <?php
 
-namespace ZoiloMora\Doctrine\DBAL\Driver\Access;
+namespace Moodlesbv\Doctrine\DBAL\Driver\Access;
 
-use ZoiloMora\Doctrine\DBAL\Platforms\AccessPlatform;
-use ZoiloMora\Doctrine\DBAL\Schema\AccessSchemaManager;
+use Moodlesbv\Doctrine\DBAL\Platforms\AccessPlatform;
+use Moodlesbv\Doctrine\DBAL\Schema\AccessSchemaManager;
 
 class Driver implements \Doctrine\DBAL\Driver
 {
@@ -34,7 +34,7 @@ class Driver implements \Doctrine\DBAL\Driver
     {
         $dsn = trim('odbc:'.$config['connection_string']);
 
-        if(substr($dsn, -1) !== ';') {
+        if (substr($dsn, -1) !== ';') {
             $dsn .= ';';
         }
 

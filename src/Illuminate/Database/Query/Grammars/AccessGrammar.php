@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoiloMora\Illuminate\Database\Query\Grammars;
+namespace Moodlesbv\Illuminate\Database\Query\Grammars;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\SqlServerGrammar as BaseGrammar;
@@ -34,7 +34,7 @@ class AccessGrammar extends BaseGrammar
      */
     protected function compileComponents(Builder $query)
     {
-        if($query->orders === null) {
+        if ($query->orders === null) {
             $query->orderByRaw('1 asc');
         }
 

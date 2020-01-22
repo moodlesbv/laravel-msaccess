@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoiloMora\Doctrine\DBAL\Driver\Access;
+namespace Moodlesbv\Doctrine\DBAL\Driver\Access;
 
 class AccessConnection extends \Doctrine\DBAL\Driver\PDOConnection implements \Doctrine\DBAL\Driver\Connection
 {

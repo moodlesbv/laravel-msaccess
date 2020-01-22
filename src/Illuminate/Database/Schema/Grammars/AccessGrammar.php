@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoiloMora\Illuminate\Database\Schema\Grammars;
+namespace Moodlesbv\Illuminate\Database\Schema\Grammars;
 
 use Illuminate\Database\Schema\Grammars\SqlServerGrammar;
 
